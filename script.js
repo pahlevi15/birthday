@@ -34,25 +34,28 @@ const letter = `
 
 Selamat ulang tahun, sayang. ❤️
 
-Terima kasih sudah hadir
-di hidupku.
+Hari ini adalah hari yang spesial, karena dunia pernah menghadirkan seseorang yang sekarang menjadi bagian paling berharga dalam hidupku.
 
-Mungkin aku bukan orang
-yang paling sempurna.
+Terima kasih sudah hadir dan bertahan sejauh ini. Terima kasih untuk setiap tawa, perhatian, kesabaran, dan semua hal kecil yang mungkin tidak kamu sadari, tetapi selalu berhasil membuat hariku menjadi lebih indah.
 
-Tetapi...
+Aku tahu aku bukan orang yang sempurna. Masih banyak kekurangan dalam diriku, masih banyak hal yang harus aku pelajari. Tapi ada satu hal yang selalu ingin aku lakukan, yaitu terus berusaha menjadi seseorang yang bisa membuatmu merasa dicintai, dihargai, dan bahagia.
 
-aku selalu berusaha
-menjadi seseorang
-yang bisa membuatmu
-tersenyum.
+Semoga di usiamu yang baru, semua doa dan impianmu satu per satu menjadi kenyataan. Semoga kesehatan, kebahagiaan, dan keberuntungan selalu menyertaimu ke mana pun kamu melangkah.
 
-Semoga semua impianmu
-menjadi kenyataan.
+Kalau suatu hari nanti hidup terasa berat, ingatlah bahwa kamu tidak harus menghadapinya sendirian. Aku akan selalu berusaha ada di sisimu, menemanimu, mendengarkanmu, dan menggenggam tanganmu sejauh yang aku mampu.
 
-Aku sayang kamu.
+Terima kasih karena sudah menjadi alasan di balik banyak senyumku. Terima kasih karena telah mengajarkanku bahwa mencintai seseorang bisa terasa begitu sederhana, namun begitu berarti.
 
-❤️
+Aku mungkin tidak bisa memberikan hadiah yang paling mewah. Tapi melalui website kecil ini, aku ingin kamu tahu bahwa setiap bagian di dalamnya dibuat dengan penuh rasa sayang dan doa untukmu.
+
+Selamat bertambah usia, cintaku.
+
+Semoga kita masih diberi banyak waktu untuk menciptakan kenangan baru, tertawa bersama, saling menguatkan, dan menulis cerita kita yang masih sangat panjang.
+
+Aku sayang kamu, hari ini, besok, dan semoga untuk waktu yang sangat lama.
+
+Selamat ulang tahun, sayang. ❤️
+
 
 `;
 
@@ -170,7 +173,7 @@ function startCountdown(){
 
 function startStory(){
 
-    let page = 3;
+    let page = currentScene + 1;
 
     autoSlide = setInterval(()=>{
 
