@@ -40,13 +40,13 @@ Terima kasih sudah hadir dan bertahan sejauh ini. Terima kasih untuk setiap tawa
 
 Aku tahu aku bukan orang yang sempurna. Masih banyak kekurangan dalam diriku, masih banyak hal yang harus aku pelajari. Tapi ada satu hal yang selalu ingin aku lakukan, yaitu terus berusaha menjadi seseorang yang bisa membuatmu merasa dicintai, dihargai, dan bahagia.
 
-Semoga di usiamu yang baru, semua doa dan impianmu satu per satu menjadi kenyataan. Semoga kesehatan, kebahagiaan, dan keberuntungan selalu menyertaimu ke mana pun kamu melangkah.
+Semoga dengan bertambahnya usiamu, semua doa dan impianmu satu per satu menjadi kenyataan. Semoga kesehatan, kebahagiaan, dan keberuntungan selalu menyertaimu ke mana pun kamu melangkah.
 
 Kalau suatu hari nanti hidup terasa berat, ingatlah bahwa kamu tidak harus menghadapinya sendirian. Aku akan selalu berusaha ada di sisimu, menemanimu, mendengarkanmu, dan menggenggam tanganmu sejauh yang aku mampu.
 
 Terima kasih karena sudah menjadi alasan di balik banyak senyumku. Terima kasih karena telah mengajarkanku bahwa mencintai seseorang bisa terasa begitu sederhana, namun begitu berarti.
 
-Aku mungkin tidak bisa memberikan hadiah yang paling mewah. Tapi melalui website kecil ini, aku ingin kamu tahu bahwa setiap bagian di dalamnya dibuat dengan penuh rasa sayang dan doa untukmu.
+Aku mungkin tidak bisa memberikan hadiah yang paling mewah. Tapi melalui tulisan ini, aku ingin kamu tahu bahwa setiap bagian di dalamnya dibuat dengan penuh rasa sayang dan doa untukmu.
 
 Selamat bertambah usia, cintaku.
 
