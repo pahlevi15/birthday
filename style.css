@@ -658,7 +658,15 @@ button:active{
 
 #typingText{
 
-    min-height:260px;
+    height:300px;          /* sesuaikan */
+
+    overflow-y:auto;
+
+    line-height:2;
+
+    padding-right:10px;
+
+    text-align:left;
 
     font-size:18px;
 
@@ -667,6 +675,19 @@ button:active{
     color:#ffffff;
 
     white-space:pre-line;
+
+}
+
+#typingText::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+#typingText{
+
+    scrollbar-width:none;
+    scroll-behavior:smooth;
 
 }
 
