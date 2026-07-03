@@ -223,6 +223,8 @@ function typingLoop(){
 
         typingText.innerHTML += letter.charAt(typingIndex);
 
+        typingText.scrollTop = typingText.scrollHeight;
+        
         typingIndex++;
 
         setTimeout(typingLoop,50);
