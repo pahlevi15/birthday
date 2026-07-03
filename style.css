@@ -1,0 +1,1532 @@
+
+:root{
+
+    --pink:#ff5b95;
+    --pink2:#ff82b0;
+    --white:#ffffff;
+    --text:#f5f5f5;
+    --glass:rgba(255,255,255,.08);
+
+    --bg1:#090b1a;
+    --bg2:#17142f;
+    --bg3:#30164f;
+
+    --shadow:0 15px 40px rgba(0,0,0,.35);
+
+    --radius:28px;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#090b1a;
+
+    overflow:hidden;
+
+    color:white;
+
+}
+
+/* =============================
+        BACKGROUND
+============================= */
+
+.background{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    z-index:-10;
+
+    background:
+    linear-gradient(
+        180deg,
+        var(--bg1),
+        var(--bg2),
+        var(--bg3)
+    );
+
+}
+
+/* =============================
+        STARS
+============================= */
+
+.stars{
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+        radial-gradient(white 1px,transparent 1px);
+
+    background-size:45px 45px;
+
+    opacity:.35;
+
+    animation:starsMove 120s linear infinite;
+
+}
+
+@keyframes starsMove{
+
+    from{
+
+        transform:translateY(0);
+
+    }
+
+    to{
+
+        transform:translateY(-700px);
+
+    }
+
+}
+
+/* =============================
+        MOON
+============================= */
+
+.moon{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    position:absolute;
+
+    right:60px;
+
+    top:70px;
+
+    background:
+
+    radial-gradient(circle at 30% 30%,
+
+    #fff,
+
+    #fff6d5,
+
+    #ffe8aa);
+
+    box-shadow:
+
+    0 0 80px rgba(255,255,200,.35),
+
+    0 0 140px rgba(255,255,200,.15);
+
+}
+
+/* =============================
+        FLOATING HEART CONTAINER
+============================= */
+
+.floating-hearts{
+
+    position:absolute;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+}
+
+/* =============================
+        LOADER
+============================= */
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#090b1a;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    z-index:99999;
+
+    transition:1s;
+
+}
+
+.loader-heart{
+
+    font-size:70px;
+
+    animation:pulse 1.2s infinite;
+
+}
+
+#loader h2{
+
+    font-size:32px;
+
+}
+
+#loader p{
+
+    color:#bbbbbb;
+
+}
+
+/* =============================
+        PROGRESS
+============================= */
+
+#progress{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:rgba(255,255,255,.08);
+
+    z-index:5000;
+
+}
+
+#progressBar{
+
+    width:0%;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        var(--pink),
+
+        #ffd0e1
+
+    );
+
+}
+
+/* =============================
+        APP
+============================= */
+
+#app{
+
+    width:100vw;
+
+    height:100vh;
+
+}
+
+/* =============================
+        SCENE
+============================= */
+
+.scene{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:40px;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:scale(.95);
+
+    transition:
+
+    opacity .9s,
+
+    transform .9s,
+
+    visibility .9s;
+
+}
+
+.scene.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:scale(1);
+
+}
+
+/* =============================
+        CONTENT
+============================= */
+
+.content{
+
+    width:100%;
+
+    max-width:700px;
+
+    padding:35px;
+
+    border-radius:32px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:var(--shadow);
+
+}
+
+/* =============================
+        TITLE
+============================= */
+
+.miniTitle{
+
+    display:inline-block;
+
+    margin-bottom:15px;
+
+    color:#ffd8e5;
+
+    font-size:15px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+}
+
+h1{
+
+    font-size:56px;
+
+    line-height:1.25;
+
+    font-weight:700;
+
+}
+
+h2{
+
+    font-size:36px;
+
+    margin-bottom:18px;
+
+}
+
+h3{
+
+    font-size:70px;
+
+}
+
+p{
+
+    margin-top:18px;
+
+    color:#eeeeee;
+
+    line-height:1.9;
+
+    font-size:18px;
+
+}
+
+/* =============================
+        PHOTO
+============================= */
+
+.photo{
+
+    width:300px;
+
+    height:380px;
+
+    object-fit:cover;
+
+    border-radius:25px;
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.45);
+
+    margin-bottom:30px;
+
+}
+
+/* =============================
+        BUTTON
+============================= */
+
+button{
+
+    margin-top:35px;
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:
+
+    17px
+
+    42px;
+
+    border-radius:999px;
+
+    background:
+
+    linear-gradient(
+
+    135deg,
+
+    var(--pink),
+
+    var(--pink2)
+
+    );
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    box-shadow:
+
+    0 12px 30px rgba(255,91,149,.4);
+
+}
+
+button:hover{
+
+    transform:
+
+    translateY(-4px)
+
+    scale(1.05);
+
+    box-shadow:
+
+    0 18px 40px rgba(255,91,149,.55);
+
+}
+
+button:active{
+
+    transform:scale(.96);
+
+}
+
+/* =============================
+        COUNTDOWN
+============================= */
+
+.countdown{
+
+    font-size:170px;
+
+    font-weight:bold;
+
+    text-shadow:
+
+    0 0 40px rgba(255,255,255,.4);
+
+}
+
+/* =============================
+        GLASS CARD
+============================= */
+
+.letter,
+.timeline,
+.reasonList,
+.gallery{
+
+    width:100%;
+
+    max-width:800px;
+
+    padding:35px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:var(--shadow);
+
+}
+
+/* =============================
+        RESPONSIVE
+============================= */
+
+@media(max-width:768px){
+
+    .content{
+
+        padding:25px;
+
+    }
+
+    h1{
+
+        font-size:36px;
+
+    }
+
+    h2{
+
+        font-size:28px;
+
+    }
+
+    h3{
+
+        font-size:55px;
+
+    }
+
+    p{
+
+        font-size:16px;
+
+    }
+
+    .photo{
+
+        width:240px;
+
+        height:320px;
+
+    }
+
+    .countdown{
+
+        font-size:120px;
+
+    }
+
+    .moon{
+
+        width:110px;
+
+        height:110px;
+
+        right:20px;
+
+        top:40px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    h1{
+
+        font-size:30px;
+
+    }
+
+    h2{
+
+        font-size:24px;
+
+    }
+
+    p{
+
+        font-size:15px;
+
+    }
+
+    button{
+
+        width:100%;
+
+    }
+
+}
+
+/* =============================
+        ANIMATION
+============================= */
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.2);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* =======================================================
+   HAPPY BIRTHDAY WEBSITE
+   PART 2
+   Timeline • Gallery • Love Letter • Reasons • Ending
+======================================================= */
+
+/* =============================
+        LOVE LETTER
+============================= */
+
+.letter{
+
+    text-align:left;
+
+}
+
+.letter h2{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+#typingText{
+
+    min-height:260px;
+
+    font-size:18px;
+
+    line-height:2;
+
+    color:#ffffff;
+
+    white-space:pre-line;
+
+}
+
+/* =============================
+        TIMELINE
+============================= */
+
+.timeline{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+    position:relative;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:18px;
+
+    top:10px;
+
+    bottom:10px;
+
+    width:3px;
+
+    background:rgba(255,255,255,.15);
+
+}
+
+.timeline .item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding-left:45px;
+
+    position:relative;
+
+    text-align:left;
+
+}
+
+.timeline .item::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:10px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        var(--pink),
+        var(--pink2)
+    );
+
+    box-shadow:0 0 20px rgba(255,91,149,.6);
+
+}
+
+.timeline .item span{
+
+    font-size:18px;
+
+    color:white;
+
+}
+
+/* =============================
+        REASON LIST
+============================= */
+
+.reasonList{
+
+    list-style:none;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.reasonList li{
+
+    padding:18px 24px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+    font-size:18px;
+
+}
+
+.reasonList li:hover{
+
+    transform:translateX(8px);
+
+    background:rgba(255,91,149,.15);
+
+}
+
+/* =============================
+        GALLERY
+============================= */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+
+}
+
+.gallery img{
+
+    width:100%;
+
+    aspect-ratio:1/1;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    transition:.45s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.08);
+
+}
+
+/* =============================
+        PHOTO ANIMATION
+============================= */
+
+.photo{
+
+    transition:1.2s;
+
+}
+
+.scene.active .photo{
+
+    animation:photoZoom 8s linear forwards;
+
+}
+
+@keyframes photoZoom{
+
+    from{
+
+        transform:scale(1);
+
+    }
+
+    to{
+
+        transform:scale(1.08);
+
+    }
+
+}
+
+/* =============================
+        CONTENT FADE
+============================= */
+
+.scene.active h1,
+.scene.active h2,
+.scene.active h3,
+.scene.active p,
+.scene.active img,
+.scene.active button{
+
+    animation:fadeUp .9s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =============================
+        BUTTON GLOW
+============================= */
+
+button{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+button::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:80%;
+
+    height:100%;
+
+    background:rgba(255,255,255,.35);
+
+    transform:skewX(-25deg);
+
+}
+
+button:hover::before{
+
+    animation:shine .8s;
+
+}
+
+@keyframes shine{
+
+    to{
+
+        left:140%;
+
+    }
+
+}
+
+/* =============================
+        PROGRESS ANIMATION
+============================= */
+
+#progressBar{
+
+    transition:width .8s ease;
+
+}
+
+/* =============================
+        ENDING TITLE
+============================= */
+
+#scene12 h1,
+#scene13 h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:72px;
+
+    color:#ffffff;
+
+    text-shadow:
+
+        0 0 20px rgba(255,91,149,.5),
+
+        0 0 40px rgba(255,91,149,.3);
+
+}
+
+/* =============================
+        MINI PARTICLE
+============================= */
+
+.sparkle{
+
+    position:absolute;
+
+    width:6px;
+
+    height:6px;
+
+    border-radius:50%;
+
+    background:white;
+
+    opacity:.8;
+
+    animation:sparkle 3s linear infinite;
+
+}
+
+@keyframes sparkle{
+
+    0%{
+
+        transform:translateY(0) scale(0);
+
+        opacity:0;
+
+    }
+
+    30%{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+    100%{
+
+        transform:translateY(-120px) scale(0);
+
+        opacity:0;
+
+    }
+
+}
+
+/* =============================
+        MOBILE
+============================= */
+
+@media(max-width:768px){
+
+    .gallery{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .timeline .item{
+
+        padding-left:40px;
+
+    }
+
+    .timeline .item span{
+
+        font-size:16px;
+
+    }
+
+    .reasonList li{
+
+        font-size:16px;
+
+    }
+
+    #scene12 h1,
+    #scene13 h1{
+
+        font-size:52px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .gallery{
+
+        grid-template-columns:1fr 1fr;
+
+        gap:12px;
+
+    }
+
+    .letter,
+    .timeline,
+    .gallery,
+    .reasonList{
+
+        padding:20px;
+
+    }
+
+    #typingText{
+
+        font-size:16px;
+
+    }
+
+}
+
+/* =======================================================
+   HAPPY BIRTHDAY WEBSITE
+   PART 3
+   Animation Engine
+=======================================================*/
+
+
+/* ===============================
+        FLOATING HEART
+================================*/
+
+.heart{
+
+    position:fixed;
+
+    bottom:-50px;
+
+    color:#ff7ba9;
+
+    pointer-events:none;
+
+    animation:heartFly linear forwards;
+
+    z-index:3;
+
+    opacity:.9;
+
+}
+
+@keyframes heartFly{
+
+    0%{
+
+        transform:
+        translateY(0)
+        scale(.5)
+        rotate(0deg);
+
+        opacity:0;
+
+    }
+
+    15%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:
+        translateY(-120vh)
+        translateX(var(--move))
+        rotate(360deg)
+        scale(1.5);
+
+        opacity:0;
+
+    }
+
+}
+
+
+/* ===============================
+        SHOOTING STAR
+================================*/
+
+.shooting-star{
+
+    position:absolute;
+
+    width:3px;
+
+    height:3px;
+
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:
+
+    0 0 10px white,
+    0 0 20px white;
+
+}
+
+.shooting-star::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:2px;
+
+    top:1px;
+
+    right:0;
+
+    background:
+
+    linear-gradient(
+        to left,
+        rgba(255,255,255,.8),
+        transparent
+    );
+
+}
+
+@keyframes shooting{
+
+    from{
+
+        transform:
+        translate(0,0)
+        rotate(-35deg);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:
+        translate(-900px,500px)
+        rotate(-35deg);
+
+        opacity:0;
+
+    }
+
+}
+
+
+/* ===============================
+        FLOATING
+================================*/
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+.photo{
+
+    animation:floating 5s ease-in-out infinite;
+
+}
+
+
+/* ===============================
+        GLOW TITLE
+================================*/
+
+h1{
+
+    text-shadow:
+
+    0 0 25px rgba(255,255,255,.15);
+
+}
+
+#scene3 h1{
+
+    animation:
+
+    glowTitle 2s infinite alternate;
+
+}
+
+@keyframes glowTitle{
+
+    from{
+
+        text-shadow:
+
+        0 0 15px #ff7aa8;
+
+    }
+
+    to{
+
+        text-shadow:
+
+        0 0 45px #ff7aa8,
+
+        0 0 80px #ff7aa8;
+
+    }
+
+}
+
+
+/* ===============================
+        BUTTON PULSE
+================================*/
+
+button{
+
+    animation:
+
+    pulseButton 2.8s infinite;
+
+}
+
+@keyframes pulseButton{
+
+    0%{
+
+        box-shadow:
+
+        0 0 0 rgba(255,91,149,.5);
+
+    }
+
+    70%{
+
+        box-shadow:
+
+        0 0 30px rgba(255,91,149,.8);
+
+    }
+
+    100%{
+
+        box-shadow:
+
+        0 0 0 rgba(255,91,149,.2);
+
+    }
+
+}
+
+
+/* ===============================
+        GALLERY
+================================*/
+
+.gallery img{
+
+    filter:brightness(.95);
+
+}
+
+.gallery img:hover{
+
+    filter:brightness(1.1);
+
+}
+
+
+/* ===============================
+        SCENE TRANSITION
+================================*/
+
+.scene{
+
+    transition:
+
+    opacity 1s,
+
+    transform 1s,
+
+    visibility 1s,
+
+    filter 1s;
+
+}
+
+.scene.active{
+
+    filter:blur(0);
+
+}
+
+.scene:not(.active){
+
+    filter:blur(8px);
+
+}
+
+
+/* ===============================
+        LOADER EXIT
+================================*/
+
+.loaderHide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+}
+
+
+/* ===============================
+        MUSIC ICON
+================================*/
+
+.musicBtn{
+
+    position:fixed;
+
+    bottom:20px;
+
+    right:20px;
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    backdrop-filter:blur(20px);
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    z-index:999;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.musicBtn:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+/* ===============================
+        LOVE BUTTON
+================================*/
+
+#loveBtn{
+
+    margin-top:40px;
+
+}
+
+
+/* ===============================
+        LAST PAGE
+================================*/
+
+#scene13{
+
+    background:
+
+    radial-gradient(
+
+    circle,
+
+    rgba(255,255,255,.05),
+
+    transparent);
+
+}
+
+
+/* ===============================
+        SCROLLBAR
+================================*/
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#ff75a9;
+
+    border-radius:20px;
+
+}
+
+
+/* ===============================
+        RESPONSIVE
+================================*/
+
+@media(max-width:768px){
+
+    .musicBtn{
+
+        width:48px;
+
+        height:48px;
+
+    }
+
+}
+
+
+@media(max-width:480px){
+
+    .scene{
+
+        padding:25px;
+
+    }
+
+}
+
+
+/* ===============================
+        THE END
+================================*/

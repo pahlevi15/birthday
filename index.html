@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ❤️</title>
+
+    <meta name="theme-color" content="#ff5b95">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- LOADING -->
+    <!-- ========================= -->
+
+    <div id="loader">
+
+        <div class="loader-heart">❤️</div>
+
+        <h2>Loading...</h2>
+
+        <p>Mempersiapkan hadiah kecil untukmu</p>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- BACKGROUND -->
+    <!-- ========================= -->
+
+    <div class="background">
+
+        <div class="stars"></div>
+
+        <div class="moon"></div>
+
+        <div class="floating-hearts"></div>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- PROGRESS BAR -->
+    <!-- ========================= -->
+
+    <div id="progress">
+
+        <div id="progressBar"></div>
+
+    </div>
+
+
+
+    <!-- ========================= -->
+    <!-- MUSIC -->
+    <!-- ========================= -->
+
+    <audio id="bgMusic" loop>
+
+        <source src="assets/music/music.mp3" type="audio/mpeg">
+
+    </audio>
+
+
+
+    <!-- ========================= -->
+    <!-- CONTAINER -->
+    <!-- ========================= -->
+
+    <main id="app">
+
+
+
+
+        <!-- ========================= -->
+        <!-- SCENE 1 -->
+        <!-- OPENING -->
+        <!-- ========================= -->
+
+        <section class="scene active" id="scene1">
+
+            <div class="content">
+
+                <span class="miniTitle">
+                    Sebuah hadiah kecil ❤️
+                </span>
+
+                <h1>
+
+                    Untuk Anisah Istiqomah
+
+                    yang paling spesial
+
+                    di hidupku.
+
+                </h1>
+
+                <p>
+                    from Reza Pahlevi
+                </p>
+
+                <button id="startBtn">
+
+                    Tap Untuk Memulai
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+
+        <!-- ========================= -->
+        <!-- SCENE 2 -->
+        <!-- COUNTDOWN -->
+        <!-- ========================= -->
+
+        <section class="scene" id="scene2">
+
+            <div class="countdown">
+
+                <h1 id="countNumber">
+
+                    3
+
+                </h1>
+
+            </div>
+
+        </section>
+
+
+
+
+        <!-- ========================= -->
+        <!-- SCENE 3 -->
+        <!-- HAPPY BIRTHDAY -->
+        <!-- ========================= -->
+
+        <section class="scene" id="scene3">
+
+            <div class="content">
+
+                <h3>🎉</h3>
+
+                <h1>
+
+                    Happy Birthday
+
+                </h1>
+
+                <h2 id="girlName">
+
+                    Sayang ❤️
+
+                </h2>
+
+                <p>
+
+                    Hari ini adalah hari yang spesial.
+
+                    Dan aku ingin menjadi orang
+
+                    yang ikut membuatmu tersenyum.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+
+        <!-- ========================= -->
+        <!-- SCENE 4 -->
+        <!-- PHOTO -->
+        <!-- ========================= -->
+
+        <section class="scene" id="scene4">
+
+            <img
+
+                src="assets/images/photo1.jpg"
+
+                class="photo"
+
+                alt="photo">
+
+            <h2>
+
+                Terima kasih...
+
+            </h2>
+
+            <p>
+
+                Karena sudah hadir
+
+                di kehidupanku.
+
+            </p>
+
+        </section>
+
+
+
+
+
+        <!-- ========================= -->
+        <!-- SCENE 5 -->
+        <!-- PHOTO -->
+        <!-- ========================= -->
+
+        <section class="scene" id="scene5">
+
+            <img
+
+                src="assets/images/photo2.jpg"
+
+                class="photo"
+
+                alt="photo">
+
+            <h2>
+
+                Aku bersyukur...
+
+            </h2>
+
+            <p>
+
+                Dipertemukan
+
+                dengan seseorang
+
+                sepertimu.
+
+            </p>
+
+        </section>
+
+
+
+
+
+        <!-- ========================= -->
+        <!-- SCENE 6 -->
+        <!-- PHOTO -->
+        <!-- ========================= -->
+
+        <section class="scene" id="scene6">
+
+            <img
+
+                src="assets/images/photo3.jpg"
+
+                class="photo"
+
+                alt="photo">
+
+            <h2>
+
+                Setiap kenangan...
+
+            </h2>
+
+            <p>
+
+                Selalu menjadi
+
+                alasan aku
+
+                untuk tersenyum.
+
+            </p>
+
+        </section>
+
+
+
+
+
+
+        <!-- ========================= -->
+        <!-- SCENE 7 -->
+        <!-- LOVE LETTER -->
+        <!-- ========================= -->
+
+        <section class="scene" id="scene7">
+
+            <div class="letter">
+
+                <h2>
+
+                    Surat Untukmu ❤️
+
+                </h2>
+
+                <p id="typingText"></p>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+        <!-- ========================= -->
+        <!-- SCENE 8 -->
+        <!-- TIMELINE -->
+        <!-- ========================= -->
+
+        <section class="scene" id="scene8">
+
+            <h2>
+
+                Perjalanan Kita
+
+            </h2>
+
+            <div class="timeline">
+
+                <div class="item">
+
+                    ❤️
+
+                    <span>
+
+                        Pertama Kenal
+
+                    </span>
+
+                </div>
+
+                <div class="item">
+
+                    ☕
+
+                    <span>
+
+                        Pertama Jalan
+
+                    </span>
+
+                </div>
+
+                <div class="item">
+
+                    📸
+
+                    <span>
+
+                        Foto Pertama
+
+                    </span>
+
+                </div>
+
+                <div class="item">
+
+                    🎂
+
+                    <span>
+
+                        Hari Ini
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+        <!-- ========================= -->
+        <!-- SCENE 9 -->
+        <!-- REASONS -->
+        <!-- ========================= -->
+
+        <section class="scene" id="scene9">
+
+            <h2>
+
+                Alasan Aku Sayang Kamu ❤️
+
+            </h2>
+
+            <ul class="reasonList">
+
+                <li>Senyummu.</li>
+
+                <li>Tawamu.</li>
+
+                <li>Perhatianmu.</li>
+
+                <li>Cara kamu membuatku tenang.</li>
+
+                <li>Dan semua tentang dirimu.</li>
+
+            </ul>
+
+        </section>
+
+
+
+
+
+
+
+        <!-- ========================= -->
+        <!-- SCENE 10 -->
+        <!-- HARAPAN -->
+        <!-- ========================= -->
+
+        <section class="scene" id="scene10">
+
+            <h2>
+
+                Harapanku Untukmu
+
+            </h2>
+
+            <p>
+
+                Semoga semua impianmu
+
+                menjadi kenyataan.
+
+                Semoga kamu selalu sehat.
+
+                Selalu bahagia.
+
+                Dan semoga...
+
+                aku tetap menjadi
+
+                bagian dari perjalanan hidupmu.
+
+            </p>
+
+        </section>
+
+
+
+
+
+
+
+
+        <!-- ========================= -->
+        <!-- SCENE 11 -->
+        <!-- GALLERY -->
+        <!-- ========================= -->
+
+        <section class="scene" id="scene11">
+
+            <h2>
+
+                Kenangan Kita
+
+            </h2>
+
+            <div class="gallery">
+
+                <img src="assets/images/photo1.jpg">
+
+                <img src="assets/images/photo2.jpg">
+
+                <img src="assets/images/photo3.jpg">
+
+                <img src="assets/images/photo4.jpg">
+
+                <img src="assets/images/photo5.jpg">
+
+                <img src="assets/images/photo6.jpg">
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+        <!-- ========================= -->
+        <!-- SCENE 12 -->
+        <!-- END -->
+        <!-- ========================= -->
+
+        <section class="scene" id="scene12">
+
+            <div class="content">
+
+                <h1>
+
+                    I Love You ❤️
+
+                </h1>
+
+                <p>
+
+                    Terima kasih
+
+                    sudah menjadi bagian
+
+                    dari hidupku.
+
+                </p>
+
+                <button id="loveBtn">
+
+                    Peluk Virtual 🤍
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+        <!-- ========================= -->
+        <!-- SCENE 13 -->
+        <!-- LAST -->
+        <!-- ========================= -->
+
+        <section class="scene" id="scene13">
+
+            <div class="content">
+
+                <h1>
+
+                    Happy Birthday ❤️
+
+                </h1>
+
+                <h2>
+
+                    Semoga harimu
+
+                    seindah senyummu.
+
+                </h2>
+
+                <p>
+
+                    Dibuat dengan ❤️
+
+                    khusus untukmu.
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- HEART CANVAS -->
+    <canvas id="heartCanvas"></canvas>
+
+    <!-- CONFETTI -->
+    <canvas id="confetti"></canvas>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
