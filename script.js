@@ -184,9 +184,11 @@ function startStory(){
 
         showScene(page);
 
-        if(page===6){
+        if(page === 6){
 
-            typeLetter();
+        clearInterval(autoSlide);
+
+        typeLetter();
 
         }
 
@@ -216,8 +218,7 @@ function typingLoop(){
 
     if(typingIndex < letter.length){
 
-        typingText.innerHTML +=
-            letter.charAt(typingIndex);
+        typingText.innerHTML += letter.charAt(typingIndex);
 
         typingIndex++;
 
@@ -228,6 +229,8 @@ function typingLoop(){
         setTimeout(()=>{
 
             nextScene();
+
+            startStory();
 
         },3000);
 
