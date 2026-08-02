@@ -32,30 +32,21 @@ const sceneDuration = 9000;
 
 const letter = `
 
-Selamat ulang tahun, sayang. ❤️
+Selamat ulang tahun ya, sayangkuu. ❤️
 
-Hari ini adalah hari yang spesial, karena dunia pernah menghadirkan seseorang yang sekarang menjadi bagian paling berharga dalam hidupku.
+Makasih ya sudah ada dan bertahan sejauh ini. Aku bersyukur buangett bisa ketemu kamu dan jalan bareng sama kamu sampai detik ini.
 
-Terima kasih sudah hadir dan bertahan sejauh ini. Terima kasih untuk setiap tawa, perhatian, kesabaran, dan semua hal kecil yang mungkin tidak kamu sadari, tetapi selalu berhasil membuat hariku menjadi lebih indah.
+Makasih juga buat kesabaranmu ngadepin aku. Aku sadar aku masih banyak kurangnya. Kurang duit contohnya ehehe... Tapi aku bakal terus berusaha jadi pasangan yang baik dan yang selalu ngertiin kamu. Banyak hal kecil yang kamu lakuin selama ini yang paling berarti buat aku seperti cara kamu peduli sama aku, perhatian and everything you do.
 
-Aku tahu aku bukan orang yang sempurna. Masih banyak kekurangan dalam diriku, masih banyak hal yang harus aku pelajari. Tapi ada satu hal yang selalu ingin aku lakukan, yaitu terus berusaha menjadi seseorang yang bisa membuatmu merasa dicintai, dihargai, dan bahagia.
+Ga terasa juga perjalanan kita sudah sejauh ini, hampir 4 tahun hubungan ini terus berlanjut dan semoga untuk waktu yang sangat lama. Semua berawal dari iseng-iseng, ingin kenal kamu lebih lanjut hingga aku memutuskan bertemu kamu untuk pertama kalinya di Kopi Clebek, terdengar lucu yaa tapi itulah awal perjalanan kita. Ga cuma itu masih banyak lain cerita yang sudah kita lalui dari hal yang sederhana pun selalu jadi cerita yang berkesan.
 
-Semoga dengan bertambahnya usiamu, semua doa dan impianmu satu per satu menjadi kenyataan. Semoga kesehatan, kebahagiaan, dan keberuntungan selalu menyertaimu ke mana pun kamu melangkah.
+Di umur yang ke-23 ini, semoga semua hal yang kamu inginkan pelan-pelan bisa tercapai, jadi miliarder kan yahh?? Aamiin. Semoga sayangkuu selalu sehat, bahagia dan dijauhkan dari hal-hal yang bikin capek pikiran. Aamiin ya Allah.
 
-Kalau suatu hari nanti hidup terasa berat, ingatlah bahwa kamu tidak harus menghadapinya sendirian. Aku akan selalu berusaha ada di sisimu, menemanimu, mendengarkanmu, dan menggenggam tanganmu sejauh yang aku mampu.
+Kalau nanti ada hari-hari yang terasa berat, inget ya kamu ga sendirian. Ada SUPERMAN disini, siap nemenin dan dengerin kapan saja.. HAHAHA
 
-Terima kasih karena sudah menjadi alasan di balik banyak senyumku. Terima kasih karena telah mengajarkanku bahwa mencintai seseorang bisa terasa begitu sederhana, namun begitu berarti.
+Selamat bertambah usia yang ke-23 sayangkuu. Semoga kita masih punya banyak waktu buat tumbuh dan jalan bareng ke depannya.
 
-Aku mungkin tidak bisa memberikan hadiah yang paling mewah. Tapi melalui tulisan ini, aku ingin kamu tahu bahwa setiap bagian di dalamnya dibuat dengan penuh rasa sayang dan doa untukmu.
-
-Selamat bertambah usia, cintaku.
-
-Semoga kita masih diberi banyak waktu untuk menciptakan kenangan baru, tertawa bersama, saling menguatkan, dan menulis cerita kita yang masih sangat panjang.
-
-Aku sayang kamu, hari ini, besok, dan semoga untuk waktu yang sangat lama.
-
-Selamat ulang tahun, sayang. ❤️
-
+Aku sayang kamu❤️
 
 `;
 
